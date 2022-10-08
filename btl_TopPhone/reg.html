@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+
+    <div id="app__login">
+        <div class="modal">
+            <div class="modal__background"></div>
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <div class="modal__inner-logo">
+                        <a href="./index.html"><img src="./assets/img/1c9084c5bac6799820d7.jpg" alt=""></a>
+                    </div>
+
+                    <div class="modal__inner-header--title">
+                        <h1>Đăng ký vào Top Phone</h1>
+                    </div>
+
+                    <div class="modal__inner-header--item">
+                        <h3>Đăng Ký bằng email</h3>
+                    </div>
+
+                    <div class="modal__inner-input">
+                        <input class="modal__inner-input--email" type="email" placeholder="Địa chỉ email" required>
+                    </div>
+                    <div class="modal__inner-input">
+                        <input class="modal__inner-input--pass" type="password" placeholder="Mật khẩu" required>
+                    </div>
+                    <div class="modal__inner-input">
+                        <input class="modal__inner-input--pass" type="password" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+
+                    <div class="modal__inner-btn">
+                        <a href="./login.html"><button id="modal__inner-input-login" class="modal__inner-log-reg-btn" >Đăng ký</button></a>
+                    </div>
+
+                    <script language="javascript">
+                        var button = document.getElementById("modal__inner-input-login");
+                        button.onclick = function() {
+                            alert("Vui lòng đăng nhập bằng tải khoản mới tạo !");
+                        }
+                    </script>
+
+                    <div class="modal__inner-reg">
+                        <h3>Bạn đã có tài khoản? <span class="modal__inner-reg-link"><a href="./login.html">Đăng nhập</a></span></h3>
+                    </div>
+
+                    <div class="modal__inner-footer">
+                        <h4>Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đang đồng ý với </h4>
+                        <h4><a href=""><u>Điều khoản sử dụng</u></a> của chúng tôi.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

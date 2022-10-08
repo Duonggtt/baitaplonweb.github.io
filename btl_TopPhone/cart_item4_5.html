@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Giỏ Hàng</title>
+</head>
+
+<body>
+
+
+    <div class="app">
+
+        <!-- header -->
+
+        <header class="header">
+
+            <nav class="header__navbar ">
+                <div class="grid">
+                    <div class="header__navbar-search grid">
+                        <div class="header__logo">
+                            <a href="/index.html"><img class="header__logo-img" src="./assets/img/1c9084c5bac6799820d7.jpg" alt=""></a>
+                        </div>
+                        <div class="header__search">
+                            <input class="header__search-input" type="text" placeholder="Bạn đang tìm gì...">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header__cart">
+                            <a href="./index_cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="./index_cart.html"><span class="header__cart-list">Giỏ hàng</span></a>
+
+                        </div>
+
+                        <script language="javascript" src="./script.js"></script>
+
+                        <div class="header__history">
+                            <span class="header__history-list">Lịch sử đơn hàng</span>
+                        </div>
+                        <div class="header__login">
+                            <i class="header__login-logo fa-solid fa-user-large"></i>
+                            <span class="header__login-user">Đăng nhập</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__navbar-brand">
+                <div class="grid">
+                    <ul class="header__navbar-brand-list ">
+                        <li class="header__navbar-brand-list-item ">
+                            <img class="header__navbar-brand-item" src="./assets/img/iphone.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/xiaomi.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/samsung.png" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/oppo.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/realme.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/vivo.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- slider -->
+
+        <div id="slider-cart">
+            <div class="container-cart grid wide ">
+                <div class="row">
+                    <div class="container__cart-column col l-12">
+                        <div class="cartshow__title">
+                            <h2><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng của bạn</h2>
+                        </div>
+
+                        <section class="cart">
+                            <form action="">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="tb-h2">Sản phẩm</th>
+                                            <th class="tb-h2">Giá tiền</th>
+                                            <th class="tb-h2">Thao tác</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td style="display:flex;align-items:center;"><img style="width:90px" src="./assets/img/vivo-V23-5G.jpg" alt="">
+                                                <h2 class="tb-h2">VIVO V23 5G</h2>
+                                            </td>
+                                            <td>
+                                                <p><span class="tb-h2">12.490.000đ</span></p>
+                                            </td>
+
+                                            <td class="tb-h2" style="cursor: pointer;">
+                                                <p class="del">Xóa</p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="price-total">
+                                    <p style="font-weight:bold;font-size:2.2rem;">Tổng tiền:<span>12.490.000</span><sup>đ</sup> </p>
+                                    <button id="price-total-btn" class="price-total-btn"><a href="./pay.html">Thanh Toán</a></button>
+                                    <script language="javascript">
+                                        var button = document.getElementById("price-total-btn");
+                                        button.onclick = function() {
+                                            alert("Thanh toán thành công !");
+                                        }
+                                    </script>
+                                </div>
+
+
+                            </form>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="slider__footer">
+            <div class="slider__footer-header">
+                <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                <h2 class="slider__footer-header-title">TOP PHONE</h2>
+            </div>
+
+            <div class="slider__footer-menu">
+                <div class="slider__footer-menu-nav">
+                    <ul class="slider__footer-menu-list">
+                        <li class="slider__footer-menu-list--item">Tích điểm quà tặng VIP</li>
+                        <li class="slider__footer-menu-list--item">Lịch sử mua hàng</li>
+                        <li class="slider__footer-menu-list--item">Chính sách đổi trả</li>
+                        <li class="slider__footer-menu-list--item">Chính sách bảo hành</li>
+                        <li class="slider__footer-menu-list--item">Giao hàng & Thanh toán</li>
+                        <li class="slider__footer-menu-list--item">Cảnh bảo giả mạo</li>
+                    </ul>
+                    <ul class="slider__footer-menu-list">
+                        <li class="slider__footer-menu-list--item">Giới thiệu công ty</li>
+                        <li class="slider__footer-menu-list--item">Tuyển dụng</li>
+                        <li class="slider__footer-menu-list--item">Gửi góp ý, Khiếu nại</li>
+                        <li class="slider__footer-menu-list--item">Chất lượng phục vụ</li>
+
+                    </ul>
+                    <ul class="slider__footer-menu-list">
+                        <li class="slider__footer-menu-list--item">Tổng đài hỗ trợ (Miễn phí gọi)</li>
+                        <li class="slider__footer-menu-list--item">Gọi mua: 1800.1800 (7:30 - 22:00)</li>
+                        <li class="slider__footer-menu-list--item">Kỹ thuật: 1800.1800 (7:30 - 22:00)</li>
+                        <li class="slider__footer-menu-list--item">Khiếu nại: 1800.1800 (8:00 - 21:30)</li>
+                        <li class="slider__footer-menu-list--item">Bảo hành: 1800.1800 (8:00 - 21:00)</li>
+
+                    </ul>
+                    <ul class="slider__footer-menu-list">
+                        <li class="slider__footer-menu-list--item">Phương thức thanh toán</li>
+                        <div class="slider__footer-menu-list-nav">
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/zalopay.webp" alt=""></li>
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/vnpay.webp" alt=""></li>
+                        </div>
+                        <div class="slider__footer-menu-list-nav">
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/visa.png" alt=""></li>
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/onepay.webp" alt=""></li>
+                        </div>
+                        <div class="slider__footer-menu-list-nav">
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/alepay.webp" alt=""></li>
+                            <li class="slider__footer-menu-list--item"><img src="./assets/img/moca.webp" alt=""></li>
+                        </div>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./reg.html">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <title>TOP PHONE</title>
+</head>
+
+<body>
+
+
+    <div class="app">
+
+        <!-- header -->
+
+        <header class="header">
+
+            <nav class="header__navbar ">
+                <div class="grid">
+                    <div class="header__navbar-search grid">
+                        <div class="header__logo">
+                            <a href=""><img class="header__logo-img" src="./assets/img/1c9084c5bac6799820d7.jpg" alt=""></a>
+                        </div>
+                        <div class="header__search">
+                            <input class="header__search-input" type="text" placeholder="Bạn đang tìm gì...">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <label for="nav-mobile-input" class="header__cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-list">Giỏ hàng</span>
+
+                        </label>
+
+                        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay"></label>
+                        <div class="nav__cart-table">
+                            <div class="nav__cart-table-header">
+                                <div class="modal__inner-logo logo"><img src="./assets/img/1c9084c5bac6799820d7.jpg" alt=""></div>
+                                <label for="nav-mobile-input" class="nav__cart-table-icon"><i class="fa-solid fa-xmark"></i></label>
+                            </div>
+                            <section class="cart">
+                                <form action="">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="tb-h2">Sản phẩm</th>
+                                                <th class="tb-h2">Giá tiền</th>
+                                                <th class="tb-h2">Số lượng</th>
+                                                <th class="tb-h2">Thao tác</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="body-cart ">
+                                            <!-- <tr>
+                                                <td style="display:flex;align-items:center;"><img style="width:90px" src="./assets/img/iphone-13-pro-max.jpg" alt=""><h2 class="tb-h2">iphone 13 pro max</h2></td>
+                                                <td><p ><span class="tb-h2-P">33.990.000</span></p></td>
+                                                <td><input class="tb-h2" style="width: 40px; outline:none;text-align: center;" type="number" value="1" min="1"></td>
+                                                <td class="tb-h2"  style="cursor: pointer;"><p class="del">Xóa</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="display:flex;align-items:center;"><img style="width:90px" src="./assets/img/iphone-11.jpg" alt=""><h2 class="tb-h2">iphone 11</h2></td>
+                                                <td><p><span class="prices" class="tb-h2-p">13.990.000</span></p></td>
+                                                <td><input class="tb-h2" style="width: 40px; outline:none;text-align: center;" type="number" value="1" min="1"></td>
+                                                <td class="tb-h2"  style="cursor: pointer;"><p class="del">Xóa</p></td>
+                                            </tr> -->
+                                        </tbody>
+
+
+                                    </table>
+
+
+                                    <div class="price-total">
+                                        <p style="font-weight:bold;font-size:2.2rem;">Tổng tiền:<span class="prices-total"></span><sup>đ</sup> </p>
+                                    </div>
+                                    <button id="price-total-btn" class="price-total-btn cart-btn-show-total"><a href="./pay.html">Thanh Toán</a></button>
+                                    <script language="javascript">
+                                        var button = document.getElementById("price-total-btn");
+                                        button.onclick = function() {
+                                            alert("Thanh toán thành công !");
+                                        }
+                                    </script>
+
+
+                                </form>
+
+                            </section>
+                        </div>
+
+
+
+                        <div class="header__history">
+                            <span class="header__history-list">Lịch sử đơn hàng</span>
+                        </div>
+                        <div class="header__login">
+                            <a href="./login.html"><i class="header__login-logo fa-solid fa-user-large"></i></a>
+                            <a href="./login.html"><span class="header__login-user">Đăng nhập</span></a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__navbar-brand">
+                <div class="grid">
+                    <ul class="header__navbar-brand-list ">
+                        <li class="header__navbar-brand-list-item ">
+                            <img class="header__navbar-brand-item" src="./assets/img/iphone.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/xiaomi.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/samsung.png" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/oppo.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/realme.webp" alt="">
+                        </li>
+                        <li class="header__navbar-brand-list-item">
+                            <img class="header__navbar-brand-item" src="./assets/img/vivo.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+
+        <!-- slider -->
+
+        <div id="slider">
+
+            <div class="slider__discount">
+                <img src="./assets/img/banner3.webp" alt="">
+            </div>
+
+            <div class="grid">
+                <div class="grid__row container__content">
+
+                    <div class="container__title">TUẦN LỄ SAMSUNG</div>
+                    <div class="slider__voicher">
+                        <div class="silder__voicher-item col 1-4">
+                            <img src="./assets/img/banner1.png" alt="">
+                        </div>
+                        <div class="silder__voicher-item col 1-4">
+                            <img src="./assets/img/banner2.png" alt="">
+                        </div>
+                        <div class="silder__voicher-item col 1-4">
+                            <img src="./assets/img/banner3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-res grid__column-10">
+                        <div class="slider__header ">
+                            <div class="grid__row">
+
+                                <div class="col l-2-4">
+                                    <div class="slider__header-item">
+                                        <a href="./index_nav1.html">
+                                            <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-m51.jpg" alt="">
+
+                                        </a>
+                                        <h4 class="slider__header-item__cmt"><i class="fa-solid fa-certificate"></i> Tuần lễ Galaxy </h4>
+                                        <a class="link" href="./index_nav1.html">
+                                            <h4 class="slider__header-item__name"> Samsung Galaxy M51</h4>
+                                        </a>
+                                        <div class="price">
+                                            <span class="slider__header-item__price">290.000</span><span class="span-d">đ</span>
+                                            <span><h3>-30%</h3></span>
+                                        </div>
+                                        <div class="slider__header-item-info"><span class="slider__header-item__rate">4.2 <i class="fa-solid fa-star"></i></span></div>
+                                        <button class="slider__header-item-btn">Thêm vào giỏ</button>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="slider__header-item">
+                                        <a href="./index_nav2.html">
+                                            <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-a52.jpg" alt="">
+
+                                        </a>
+                                        <h4 class="slider__header-item__cmt"><i class="fa-solid fa-certificate"></i> Tuần lễ Galaxy </h4>
+                                        <a class="link" href="./index_nav2.html">
+                                            <h4 class="slider__header-item__name"> Samsung Galaxy A52 128GB</h4>
+                                        </a>
+                                        <div class="price">
+                                            <span class="slider__header-item__price">290.000</span><span class="span-d">đ</span>
+                                            <span><h3>-26%</h3></span>
+                                        </div>
+                                        <div class="slider__header-item-info"><span class="slider__header-item__rate">4.6 <i class="fa-solid fa-star"></i></span></div>
+                                        <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="slider__header-item">
+                                        <a href="./index_nav3.html">
+                                            <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-s21-ultra.jpg" alt="">
+
+
+                                        </a>
+                                        <h4 class="slider__header-item__cmt"><i class="fa-solid fa-certificate"></i> Tuần lễ Galaxy </h4>
+                                        <a class="link" href="./index_nav3.html">
+                                            <h4 class="slider__header-item__name"> Samsung Galaxy S21 Ultra 5G 128GB</h4>
+                                        </a>
+                                        <div class="price">
+                                            <span class="slider__header-item__price">22.990.000</span><span class="span-d">đ</span>
+                                            <span><h3>-21%</h3></span>
+                                        </div>
+
+                                        <div class="slider__header-item-info"><span class="slider__header-item__rate">4.8 <i class="fa-solid fa-star"></i></span></div>
+                                        <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="slider__header-item">
+                                        <a href="./index_nav4.html">
+                                            <img class="slider__header-item__img" src="./assets/img/Samsung-Galaxy-S21.jpg" alt="">
+
+
+                                            <h4 class="slider__header-item__cmt"><i class="fa-solid fa-certificate"></i> Tuần lễ Galaxy </h4>
+                                            <a class="link" href="./index_nav4.html">
+                                                <h4 class="slider__header-item__name"> Samsung Galaxy S21 FE 5G (8GB/256GB)</h4>
+                                            </a>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">19.990.000</span><span class="span-d">đ</span>
+                                                <span><h3>-26%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.5  <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="slider__header-item">
+                                        <a href="./index_nav5.html">
+                                            <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-z-fold-3.jpg" alt="">
+
+                                        </a>
+                                        <h4 class="slider__header-item__cmt"><i class="fa-solid fa-certificate"></i> Tuần lễ Galaxy </h4>
+                                        <a class="link" href="./index_nav5.html">
+                                            <h4 class="slider__header-item__name"> Samsung Galaxy Z Fold3 5G 256GB</h4>
+                                        </a>
+                                        <div class="price">
+                                            <span class="slider__header-item__price">33.990.000</span><span class="span-d">đ</span>
+                                            <span><h3>-11%</h3></span>
+                                        </div>
+                                        <div class="slider__header-item-info"><span class="slider__header-item__rate">2.0 <i class="fa-solid fa-star"></i></span></div>
+                                        <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slider__menu">
+                <div class="grid">
+                    <div class="grid__row slider__menu-container">
+                        <div class="slider__menu-container-title">ĐIỆN THOẠI NỔI BẬT NHẤT!!!</div>
+
+                        <div class="grid-res grid__column-10">
+                            <div class="slider__menu-list">
+                                <div class="grid__row">
+
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav2_1.html">
+                                                <img class="slider__header-item__img" src="./assets/img/iphone-13-pro-max.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav2_1.html">
+                                                <h4 class="slider__header-item__name"> IPHONE 13 Pro Max 256GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">33.190.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.6 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav2_2.html">
+                                                <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-a13.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav2_2.html">
+                                                <h4 class="slider__header-item__name"> Samsung Galaxy A13 6GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">10.490.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.0 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav2_3.html">
+                                                <img class="slider__header-item__img" src="./assets/img/oppo-reno7-z.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav2_3.html">
+                                                <h4 class="slider__header-item__name"> OPPO Reno7 Z 5G</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">10.490.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav2_4.html">
+                                                <img class="slider__header-item__img" src="./assets/img/vivo-y21s.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav2_4.html">
+                                                <h4 class="slider__header-item__name"> Vivo Y21s 4GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">4.790.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav2_5.html">
+                                                <img class="slider__header-item__img" src="./assets/img/xiaomi-redmi-10c.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav2_5.html">
+                                                <h4 class="slider__header-item__name"> Xiaomi Redmi 10C 64GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">2.790.000</span><span class="span-d">đ</span>
+                                                <span><h3>-20%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.6 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav3_1.html">
+                                                <img class="slider__header-item__img" src="./assets/img/iphone-11.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav3_1.html">
+                                                <h4 class="slider__header-item__name"> IPHONE 11 64GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">13.190.000</span><span class="span-d">đ</span>
+                                                <span><h3>-12%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.0 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav3_2.html">
+                                                <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-a23.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav3_2.html">
+                                                <h4 class="slider__header-item__name"> Samsung Galaxy A23 6GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">6.090.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.2  <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav3_3.html">
+                                                <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-m53.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav3_3.html">
+                                                <h4 class="slider__header-item__name"> Samsung Galaxy M53</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">12.490.000</span><span class="span-d">đ</span>
+                                                <span><h3>-6%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav3_4.html">
+
+                                                <img class="slider__header-item__img" src="./assets/img/oppo-a95.webp" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav3_4.html">
+                                                <h4 class="slider__header-item__name"> OPPO A95</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">6.490.000</span><span class="span-d">đ</span>
+                                                <span><h3>-7%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav3_5.html">
+                                                <img class="slider__header-item__img" src="./assets/img/realme-c35.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav3_5.html">
+                                                <h4 class="slider__header-item__name"> Realme C35 64GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">4.290.000</span><span class="span-d">đ</span>
+                                                <span><h3>-5%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav4_1.html">
+                                                <img class="slider__header-item__img" src="./assets/img/iphone-13.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav4_1.html">
+                                                <h4 class="slider__header-item__name"> IPHONE 13 128GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">22.590.000</span><span class="span-d">đ</span>
+                                                <span><h3>-9%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">4.4 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav4_2.html">
+                                                <img class="slider__header-item__img" src="./assets/img/realme-c25.jpeg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav4_2.html">
+                                                <h4 class="slider__header-item__name"> Reallme C25 64GB</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">3.690.000</span><span class="span-d">đ</span>
+                                                <span><h3>-21%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.6 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav4_3.html">
+                                                <img class="slider__header-item__img" src="./assets/img/vivi-y01.jpg" alt="">
+
+
+                                            </a>
+                                            <a class="link" href="./nav4_3.html">
+                                                <h4 class="slider__header-item__name"> Vivo Y01</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">2.790.000</span><span class="span-d">đ</span>
+                                                <span><h3>-6%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.2 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav4_4.html">
+                                                <img class="slider__header-item__img" src="./assets/img/samsung-galaxy-a73.jpg" alt="">
+
+                                            </a>
+                                            <a class="link" href="./nav4_4.html">
+                                                <h4 class="slider__header-item__name"> Samsung Galaxy A73 5G </h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">11.990.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.7 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4">
+                                        <div class="slider__header-item">
+                                            <h4 class="online-top">Trả góp 0%</h4>
+                                            <a href="./nav4_5.html">
+                                                <img class="slider__header-item__img" src="./assets/img/vivo-V23-5G.jpg" alt="">
+                                            </a>
+                                            <a class="link" href="./nav4_5.html">
+                                                <h4 class="slider__header-item__name"> Vivo V23 5G</h4>
+                                            </a>
+                                            <h4 class="online">Online giá rẻ</h4>
+                                            <div class="price">
+                                                <span class="slider__header-item__price">12.490.000</span><span class="span-d">đ</span>
+                                                <span><h3>-10%</h3></span>
+                                            </div>
+                                            <div class="slider__header-item-info"><span class="slider__header-item__rate">3.6 <i class="fa-solid fa-star"></i></span></div>
+                                            <button class="slider__header-item-btn">Thêm vào giỏ</button>
+                                            <script src="./script.js"></script>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__footer">
+                    <div class="slider__footer-header">
+                        <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                        <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                        <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                        <h2 class="slider__footer-header-title">TOP PHONE</h2>
+                    </div>
+
+                    <div class="slider__footer-menu">
+                        <div class="slider__footer-menu-nav">
+                            <ul class="slider__footer-menu-list">
+                                <li class="slider__footer-menu-list--item">Tích điểm quà tặng VIP</li>
+                                <li class="slider__footer-menu-list--item">Lịch sử mua hàng</li>
+                                <li class="slider__footer-menu-list--item">Chính sách đổi trả</li>
+                                <li class="slider__footer-menu-list--item">Chính sách bảo hành</li>
+                                <li class="slider__footer-menu-list--item">Giao hàng & Thanh toán</li>
+                                <li class="slider__footer-menu-list--item">Cảnh bảo giả mạo</li>
+                            </ul>
+                            <ul class="slider__footer-menu-list">
+                                <li class="slider__footer-menu-list--item">Giới thiệu công ty</li>
+                                <li class="slider__footer-menu-list--item">Tuyển dụng</li>
+                                <li class="slider__footer-menu-list--item">Gửi góp ý, Khiếu nại</li>
+                                <li class="slider__footer-menu-list--item">Chất lượng phục vụ</li>
+
+                            </ul>
+                            <ul class="slider__footer-menu-list">
+                                <li class="slider__footer-menu-list--item">Tổng đài hỗ trợ (Miễn phí gọi)</li>
+                                <li class="slider__footer-menu-list--item">Gọi mua: 1800.1800 (7:30 - 22:00)</li>
+                                <li class="slider__footer-menu-list--item">Kỹ thuật: 1800.1800 (7:30 - 22:00)</li>
+                                <li class="slider__footer-menu-list--item">Khiếu nại: 1800.1800 (8:00 - 21:30)</li>
+                                <li class="slider__footer-menu-list--item">Bảo hành: 1800.1800 (8:00 - 21:00)</li>
+
+                            </ul>
+                            <ul class="slider__footer-menu-list">
+                                <li class="slider__footer-menu-list--item">Phương thức thanh toán</li>
+                                <div class="slider__footer-menu-list-nav">
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/zalopay.webp" alt=""></li>
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/vnpay.webp" alt=""></li>
+                                </div>
+                                <div class="slider__footer-menu-list-nav">
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/visa.png" alt=""></li>
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/onepay.webp" alt=""></li>
+                                </div>
+                                <div class="slider__footer-menu-list-nav">
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/alepay.webp" alt=""></li>
+                                    <li class="slider__footer-menu-list--item"><img src="./assets/img/moca.webp" alt=""></li>
+                                </div>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
